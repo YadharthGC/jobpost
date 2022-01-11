@@ -1,0 +1,31 @@
+#srow {
+  width: 100%;
+  border: solid 1px black;
+}
+#scola {
+  border: solid 1px green;
+}
+#scolb {
+  border: solid 1px rgb(192, 223, 16);
+}
+.full {
+  width: 100%;
+  justify-content: center;
+  padding-left: 5%;
+  padding-right: 5%;
+}
+.apply {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.applybox {
+  background-color: rgb(24, 219, 253);
+  font-size: 35px;
+  color: white;
+  padding: 5%;
+  font-family: "Aclonica", sans-serif;
+  border-radius: 8px;
+  border: solid 2px blue;
+}

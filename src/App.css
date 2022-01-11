@@ -1,38 +1,376 @@
-.App {
-  text-align: center;
+.bp {
+  font-family: "Aclonica", sans-serif;
+  font-size: 20px;
+  font-weight: 900;
+}
+.JP {
+  font-family: "Stalinist One", cursive;
+  font-size: 20px;
+  font-weight: bolder;
+}
+.nav-item {
+  font-family: "El Messiri", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+}
+.home {
+  height: 100vh;
+  background-image: url(./images/w1.jpg);
+  background-repeat: no-repeat;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.rregister {
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: lightgray;
+}
+.rregisterbox {
+  text-align: center;
+  border: solid 1px lightgray;
+  padding-top: 9px;
+  padding-bottom: 3%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border: solid 1px black;
+  border-radius: 4px;
+}
+#first,
+#last {
+  width: 37%;
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+}
+#first {
+  margin-right: 6%;
+}
+#gmail,
+#password,
+#cpassword,
+#wru {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 80%;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  font-family: "El Messiri", sans-serif;
+  font-size: 17px;
+}
+#wru {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+#submit {
+  text-align: center;
+  margin-top: 2%;
+  margin-bottom: 1%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+.submit {
+  text-align: center;
+  margin-bottom: 7%;
+}
+.heading {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  text-align: center;
+}
+.ala {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 15px;
+}
+#lgmail,
+#lpassword {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 100%;
+  border: solid 1px lightgray;
+  border-radius: 3px;
+  font-family: "El Messiri", sans-serif;
+  font-size: 17px;
+}
+.rlbox {
+  text-align: center;
+  border: solid 1px rgb(15, 15, 15);
+  border-radius: 6px;
+  padding-top: 9px;
+  padding-bottom: 1%;
+  padding-right: 1%;
+  padding-left: 1%;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  background-color: white;
+}
+/* //////////////////////////////////// */
+.add {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3%;
+}
+.addbox {
+  text-align: center;
+  border: solid 1px lightgray;
+  padding-top: 9px;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border: solid 1px rgb(15, 15, 15);
+  background-color: white;
+}
+#position,
+#cname,
+#jtype,
+#salary,
+#ldate {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 300px;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  font-family: "El Messiri", sans-serif;
+  font-size: 17px;
+}
+#jtype {
+  padding-top: 1%;
+  padding-bottom: 1%;
+}
+.al {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+  color: rgb(109, 107, 107);
+  text-decoration: underline;
+  text-align: center;
+}
+#ldate {
+  margin-top: 0%;
+}
+.headingb {
+  font-family: "Cinzel", serif;
+  font-size: 20px;
+  text-align: center;
+  text-decoration: underline;
+  margin-bottom: 3%;
+}
+#postsubmit {
+  text-align: center;
+  margin-top: 2%;
+  font-family: "Roboto", sans-serif;
+  font-weight: bolder;
+}
+.postsubmit {
+  text-align: center;
+  margin-bottom: 7%;
+}
+.skills input {
+  margin-top: 1%;
+  margin-bottom: 1%;
+  width: 90px;
+  margin-right: 10px;
+  border: solid 1px lightgray;
+  border-radius: 4px;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 17px;
+}
+/* /////////////////////////////// */
+
+#row {
+  /* width: 60%; */
+  margin-top: 1%;
+  margin-bottom: 1%;
+  border-radius: 6px;
+}
+.outer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.col-lg-8 {
+  border: solid 1px rgb(30, 30, 32);
+}
+.col-lg-4 {
+  border: solid 1px rgb(12, 11, 12);
+}
+.col-lg-12 {
+  border: solid 1px lightgray;
+  background-color: white;
+}
+.appname {
+  font-size: 20px;
+  font-weight: 900;
+  font-family: "Cinzel", serif;
+}
+.appcompany,
+.appsalary,
+.appskills,
+.appskill {
+  font-family: "El Messiri", sans-serif;
+  font-size: 18px;
+}
+.appskills {
+  text-decoration: underline;
+  font-weight: 900;
+}
+.key,
+.keyans {
+  font-family: "El Messiri", sans-serif;
+  font-size: 18px;
+}
+.key {
+  text-decoration: underline;
+  font-weight: 900;
+  color: gray;
+}
+.appreq {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+ul .appskill {
+  list-style: none;
+  padding: 0%;
+}
+.appskill::before {
+  content: "\2605";
+}
+.appbutton {
+  margin-top: 2%;
+  margin-bottom: 2%;
+}
+#appbutton {
+  font-weight: bolder;
   color: white;
+  font-family: "Roboto", sans-serif;
+}
+.sal {
+  font-family: "Josefin Sans", sans-serif;
+}
+.sal:hover {
+  color: rgb(60, 58, 223);
+  text-decoration: underline;
 }
 
-.App-link {
-  color: #61dafb;
+.profile {
+  margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.profilebox {
+  border: solid 1px lightgray;
+  padding: 2%;
+  background-color: white;
+  box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+  border-radius: 6px;
+}
+.bs {
+  background-image: linear-gradient(
+    to right top,
+    #6bc8d1,
+    #70ccd5,
+    #75d0d9,
+    #7ad5dd,
+    #7fd9e1,
+    #70dfe3,
+    #61e4e3,
+    #51eae1,
+    #24f1d2,
+    #0af6ba,
+    #35f99a,
+    #5ffb73
+  );
+  height: 100%;
+  padding-bottom: 2%;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bss {
+  background-image: linear-gradient(
+    to right top,
+    #6bc8d1,
+    #70ccd5,
+    #75d0d9,
+    #7ad5dd,
+    #7fd9e1,
+    #70dfe3,
+    #61e4e3,
+    #51eae1,
+    #24f1d2,
+    #0af6ba,
+    #35f99a,
+    #5ffb73
+  );
+  height: 100vh;
+  padding-bottom: 2%;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.qwer {
+  background-image: linear-gradient(
+    to right top,
+    #936bd1,
+    #d869b7,
+    #fd7696,
+    #ff947b,
+    #ffb870,
+    #fbc270,
+    #f5cd72,
+    #eed776,
+    #f2ca6d,
+    #f6be66,
+    #f9b061,
+    #fba35f
+  );
+}
+
+li:hover {
+  background-color: rgb(219, 203, 203);
+  color: white !important;
+}
+
+/* ////////////////////// */
+.spl {
+  background-image: url(./images/w1.jpg);
+  height: 95vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.splbox {
+  border: solid 2px rgb(10, 10, 10);
+  border-radius: 4px;
+  background-color: white;
+  padding-right: 20%;
+  padding-left: 20%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
+.wel {
+  font-size: 50px;
+  font-family: "El Messiri", sans-serif;
+  text-align: center;
+}
+.jj {
+  text-align: center;
+  font-size: 70px !important;
+  font-family: "Stalinist One", cursive;
+}
+.btns {
+  display: flex;
+  justify-content: space-evenly;
+}
+#bta,
+#btb {
+  font-size: 30px;
+  font-weight: 900;
+  font-family: "Cinzel", serif;
+  padding: 5px;
 }

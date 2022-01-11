@@ -1,0 +1,75 @@
+.register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.box {
+  padding: 2%;
+  border: solid 1px rgb(19, 18, 18);
+  border-radius: 6px;
+  text-align: center;
+  box-shadow: rgba(0, 0, 0, 0.45) 8px 25px 20px -20px;
+}
+input {
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+#sgmail,
+#spassword {
+  width: 90%;
+  border: solid 1.9px lightgray;
+  border-radius: 3px;
+  font-family: "El Messiri", sans-serif;
+}
+#fname,
+#lname,
+#smajor,
+#clg,
+#start,
+#end {
+  width: 43.5%;
+  border: solid 1.9px lightgray;
+  border-radius: 3px;
+  font-family: "El Messiri", sans-serif;
+}
+#lname,
+#clg,
+#end {
+  margin-left: 3%;
+}
+.sheading {
+  font-family: "Cinzel", serif;
+  font-weight: 900;
+  font-size: 20px;
+}
+#ssubmit {
+  font-family: "Aclonica", sans-serif;
+}
+.sal {
+  font-family: "Josefin Sans", sans-serif;
+}
+.sal:hover {
+  color: rgb(60, 58, 223);
+  text-decoration: underline;
+}
+.bs,
+#ree {
+  background-image: linear-gradient(
+    to right top,
+    #6bc8d1,
+    #70ccd5,
+    #75d0d9,
+    #7ad5dd,
+    #7fd9e1,
+    #70dfe3,
+    #61e4e3,
+    #51eae1,
+    #24f1d2,
+    #0af6ba,
+    #35f99a,
+    #5ffb73
+  );
+  height: 100%;
+  padding-bottom: 2%;
+}
