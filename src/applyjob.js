@@ -11,7 +11,7 @@ function Applyjob() {
 
   useEffect(() => {
     post();
-  }, []);
+  }, [datas]);
 
   // useEffect(() => {
   //   fetch();
