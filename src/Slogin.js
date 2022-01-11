@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate, usePatrams } from "react-router-dom";
-import "./app.css";
+import "./App.css";
 
 function Slogin(props) {
   const [gmail, setgmail] = useState([]);

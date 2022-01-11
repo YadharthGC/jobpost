@@ -3,7 +3,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
 import "./sjob.css";
-import "./app.css";
+import "./App.css";
 
 function Sjob() {
   const [datas, setdatas] = useState([]);

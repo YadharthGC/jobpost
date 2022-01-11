@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import axios from "axios";
 import { useNavigate, useParams } from "react-router-dom";
-import "./app.css";
+import "./App.css";
 
 function Rregister() {
   const [fname, setfname] = useState([]);
