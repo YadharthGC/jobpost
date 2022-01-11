@@ -23,13 +23,16 @@ function Rregister() {
     try {
       e.preventDefault();
       if (password === cpassword) {
-        let post = await axios.post("http://localhost:3002/register", {
-          fname,
-          lname,
-          wru,
-          gmail,
-          password,
-        });
+        let post = await axios.post(
+          "https://yadharthjp.herokuapp.com/register",
+          {
+            fname,
+            lname,
+            wru,
+            gmail,
+            password,
+          }
+        );
         window.alert(post.data.message);
         if (post.data.status === true) {
           navigate("/recruiter-login", { replace: true });

@@ -17,7 +17,7 @@ function Viewapp() {
   let fetch = async () => {
     try {
       let post = await axios.post(
-        "http://localhost:3002/cview",
+        "https://yadharthjp.herokuapp.com/cview",
         {
           did,
         },

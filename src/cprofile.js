@@ -18,7 +18,7 @@ function Cprofile() {
       let ids = window.localStorage.idz;
       console.log(ids);
       let post = await axios.post(
-        "http://localhost:3002/profile",
+        "https://yadharthjp.herokuapp.com/profile",
         { ids },
         {
           headers: {

@@ -13,7 +13,7 @@ function Slogin(props) {
   let handlesubmit = async (e) => {
     try {
       e.preventDefault();
-      let post = await axios.post("http://localhost:3002/clogin", {
+      let post = await axios.post("https://yadharthjp.herokuapp.com/clogin", {
         gmail,
         password,
       });

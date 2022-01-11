@@ -22,7 +22,7 @@ function Add() {
       let pdate = day + "/" + month + "/" + year;
       ldate.toString();
       let post = await axios.post(
-        "http://localhost:3002/post",
+        "https://yadharthjp.herokuapp.com/post",
         {
           date,
           position,

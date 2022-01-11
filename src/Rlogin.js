@@ -12,7 +12,7 @@ function Rlogin() {
   let handlesubmit = async (e) => {
     try {
       e.preventDefault();
-      let post = await axios.post("http://localhost:3002/login", {
+      let post = await axios.post("https://yadharthjp.herokuapp.com/login", {
         gmail,
         password,
       });

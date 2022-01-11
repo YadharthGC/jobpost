@@ -40,7 +40,7 @@ function Sregister() {
                   console.log(url);
 
                   let posta = await axios.post(
-                    "http://localhost:3002/candidate",
+                    "https://yadharthjp.herokuapp.com/candidate",
                     {
                       fname,
                       lname,

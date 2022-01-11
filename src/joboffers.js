@@ -25,7 +25,7 @@ function Sjob() {
 
   let fetch = async () => {
     try {
-      let get = await axios.get("http://localhost:3002/offers", {
+      let get = await axios.get("https://yadharthjp.herokuapp.com/offers", {
         headers: {
           Authorization: window.localStorage.getItem("app_token"),
         },
@@ -41,7 +41,7 @@ function Sjob() {
     console.log(did, e);
     try {
       let post = await axios.post(
-        "http://localhost:3002/apply",
+        "https://yadharthjp.herokuapp.com/apply",
         {
           did,
           e,

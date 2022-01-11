@@ -15,7 +15,7 @@ function Jobapp() {
 
   let fetch = async () => {
     try {
-      let get = await axios.get("http://localhost:3002/get", {
+      let get = await axios.get("https://yadharthjp.herokuapp.com/get", {
         headers: {
           Authorization: window.localStorage.getItem("app_token"),
         },
@@ -29,7 +29,7 @@ function Jobapp() {
   let handledel = async (e) => {
     try {
       let post = await axios.post(
-        "http://localhost:3002/getdel",
+        "https://yadharthjp.herokuapp.com/getdel",
         { e },
         {
           headers: {

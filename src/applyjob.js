@@ -22,7 +22,7 @@ function Applyjob() {
       let ids = window.localStorage.idz;
       console.log(ids);
       let post = await axios.post(
-        "http://localhost:3002/view",
+        "https://yadharthjp.herokuapp.com/view",
         { ids },
         {
           headers: {
@@ -42,7 +42,7 @@ function Applyjob() {
     console.log(did, e);
     try {
       let post = await axios.post(
-        "http://localhost:3002/delapply",
+        "https://yadharthjp.herokuapp.com/delapply",
         {
           did,
           e,
@@ -66,7 +66,7 @@ function Applyjob() {
 
   // let fetch = async () => {
   //   try {
-  //     let get = await axios.get("http://localhost:3002/view", {
+  //     let get = await axios.get("https://yadharthjp.herokuapp.com/view", {
   //       headers: {
   //         Authorization: window.localStorage.getItem("app_token"),
   //       },
