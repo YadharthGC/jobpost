@@ -19,7 +19,7 @@ function Slogin(props) {
       });
       window.alert(post.data.message);
       if (post.data.status === false) {
-        navigate("/register", { replace: true });
+        navigate("/student-register", { replace: true });
       } else if (post.data.status === true) {
         window.localStorage.setItem("app_token", post.data.token);
         window.localStorage.setItem("idz", post.data.did);

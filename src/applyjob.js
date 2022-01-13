@@ -8,10 +8,12 @@ function Applyjob() {
   const [datas, setdatas] = useState([]);
   const navigate = useNavigate();
   const params = useParams();
+  const [success, setsuccess] = useState(false);
 
   useEffect(() => {
     post();
-  }, [datas]);
+    setsuccess(false);
+  }, [success]);
 
   // useEffect(() => {
   //   fetch();
@@ -54,6 +56,7 @@ function Applyjob() {
         }
       );
       window.alert(post.data.message);
+      setsuccess(true);
       if (post.data.status === true) {
         navigate(`/my-Applications/${window.localStorage.idz}`, {
           replace: true,
