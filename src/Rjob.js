@@ -7,11 +7,13 @@ import "./sregister.css";
 
 function Jobapp() {
   const [datas, setdatas] = useState([]);
+  const [success, setsuccess] = useState(false);
   const navigate = useNavigate();
 
   useEffect(() => {
     fetch();
-  }, [datas]);
+    setsuccess(false);
+  }, [success]);
 
   let fetch = async () => {
     try {
@@ -21,23 +23,32 @@ function Jobapp() {
         },
       });
       setdatas([...get.data]);
-      console.log(get);
     } catch (error) {
       console.log(error);
     }
   };
+
   let handledel = async (e) => {
     try {
-      let post = await axios.post(
-        "https://yadharthjp.herokuapp.com/getdel",
-        { e },
-        {
-          headers: {
-            Authorization: window.localStorage.getItem("app_token"),
-          },
-        }
-      );
-      window.alert(post.data.message);
+      console.log("delete");
+      window.alert("deleted");
+      await axios
+        .post(
+          "https://yadharthjp.herokuapp.com/getdel",
+          { e },
+          {
+            headers: {
+              Authorization: window.localStorage.getItem("app_token"),
+            },
+          }
+        )
+        .then((res) => {
+          if (res.data.message) {
+            setsuccess(true);
+          }
+        });
+
+      // window.alert(post.data.message);
     } catch (error) {
       console.log(error);
     }
@@ -46,6 +57,7 @@ function Jobapp() {
   return (
     <div className="bs">
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div></div>
         <div class="container-fluid">
           <a class="navbar-brand" href="#">
             <span className="JP">JP</span>
